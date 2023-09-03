@@ -2,11 +2,15 @@ import styled from 'styled-components';
 
 export const StyleSection = styled('section')(() => {
   return {
-    width: '1020px',
     padding: '70px',
     display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
+    flexDirection: 'column',
     border: '1px solid #000',
+  };
+});
+
+export const StyleSectionTitle = styled('h2')(() => {
+  return {
+    textAlign: 'center',
   };
 });
