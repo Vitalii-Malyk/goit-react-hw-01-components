@@ -1,6 +1,6 @@
 import dataUser from '../user.json';
 import { Profile } from './Profile/Profile';
-import dataStatistics from '../data.json';
+// import dataStatistics from '../data.json';
 // import { Statistics } from './Statistics/Statistics';
 
 export const App = () => {
@@ -31,4 +31,3 @@ export const App = () => {
     </div>
   );
 };
-console.log(dataStatistics);
