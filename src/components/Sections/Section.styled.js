@@ -6,6 +6,7 @@ export const StyleSection = styled('section')(() => {
     display: 'flex',
     flexDirection: 'column',
     border: '1px solid #000',
+    alignItems: 'center',
   };
 });
 
