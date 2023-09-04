@@ -1,4 +1,7 @@
 import PropTypes from 'prop-types';
+
+import { randomColor } from 'helper/functions';
+
 import {
   StyleSection,
   StyleTitle,
@@ -6,11 +9,6 @@ import {
   StyleStatItem,
   StylePercentage,
 } from 'components/Statistics/Statistics.styled';
-
-const RandomColor = () =>
-  `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
 
 export const Statistics = ({ title, stats }) => {
   return (
@@ -22,7 +20,7 @@ export const Statistics = ({ title, stats }) => {
             <StyleStatItem
               className="item"
               key={id}
-              style={{ backgroundColor: RandomColor() }}
+              style={{ backgroundColor: randomColor() }}
             >
               <span className="label">{label}</span>
               <StylePercentage className="percentage">

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import { StyleSection, StyleSectionTitle } from './Section.styled';
 
 export function Section({ title, children }) {
@@ -12,4 +13,5 @@ export function Section({ title, children }) {
 
 Section.prototype = {
   title: PropTypes.string,
+  children: PropTypes.func,
 };

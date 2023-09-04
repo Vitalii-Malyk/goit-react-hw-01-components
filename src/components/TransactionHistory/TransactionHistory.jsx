@@ -1,9 +1,13 @@
 import PropTypes from 'prop-types';
+
+
 import {
   StyleTableHeader,
   StyleTable,
   StyleTableTerm,
 } from 'components/TransactionHistory/TransactionHistory.styled';
+
+
 
 export const TransactionHistory = ({ items }) => {
   return (
